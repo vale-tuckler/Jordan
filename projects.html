@@ -3,45 +3,65 @@
     <head>
         <meta charset ="utf-8">
         <link rel ="icon" href="images/logo-amarillo3.png">
-        <link rel ="stylesheet" href="css/jordan.css">
-        <script src="script/jordan.js"></script>
+        <link rel ="stylesheet" href="css/projects.css">
+        <title>Projects</title>
     </head>
     <body id="proyectos">
-        <a href="home.html"><img src="images/logo-amarillo3.png" alt ="Logo de Jordan Tuckler" title="Mi logo" id="logo"/></a>
-       
-        
-        <a href="projects.html">Projects</a>
-        <a href="about.html">About me</a>
-        <a href="contact.html">Contact</a><br>
-        <h1>My projects</h1>
+    <div id="container">
+        <header id="header">
+            <a href="home.html"><img src="images/logo-amarillo3.png" alt ="Logo de Jordan Tuckler" title="Mi logo" id="logo"/></a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About me</a>
+            <a href="contact.html">Contact</a><br>            
+        </header>
+        <h1 class="main-title">My projects</h1>
 
-        <h2>Apartamento hecho a base de containers</h2>
-        <article>
-            <p>AQUÍ VA UNA DESCRIPCIÓN DEL PROYECTO</p>
-        </article>
-        <div class="slider">
-            <figure>
-                <img src="images/containers1.png" alt="apartamento a base de container frente">
-                <img src="images/containers2.png" alt="apartamento a base de containers lateral">
-                <img src="images/containers3.png" alt="apartamento a base de containers aérea lateral">
-                <img src="images/containers4.png" alt="apartamento a base de containers aérea frontal">
-
-            </figure>
+        <div class ="grid-container">
+                <div class="grid-item">
+                    <img src="images/homeContainer1.jpg" alt="Home container front" title="Home container front" class="project-img"/>
+                </div>
+                <div class="paragraph">
+                   <p class="centered">
+                    Description of the project and the inspirations for it. Also, technologies used
+                    in developing the project. The image beside shows the interior of the home containers.
+                   </p>
+                </div>            
+                <div class="paragraph">
+                    <p class="centered">
+                    Description of the project and the inspirations for it. Also, technologies used
+                    in developing the project. The image beside shows the interior of the home containers.
+                    </p>
+                </div>
+                <div class = "grid-item">
+                    <img src="images/homeContainer2.jpg" alt="Home container lateral side" title="Home container lateral" class="project-img"/>
+                </div>
+                <div class="grid-item">
+                    <img src="images/homeContainer3.jpg" alt="Home container kitchen" title="Home container kitchen" class="project-img"/>    
+                </div>
+                <div class="paragraph">
+                    <p class="centered">
+                    Description of the project and the inspirations for it. Also, technologies used
+                    in developing the project. The image beside shows the interior of the home containers.
+                    </p>
+                </div>    
         </div>
-        <h2>Planos de un edificio</h2>
-        <article>
-            <p>AQUÍ VA LA DESCRIPCIÓN DEL PLANO/PROYECTO</p>
-        </article>
-        <div class="slider">
-            <figure>
-                <img src="images/plano.png">
-                <img src="images/tajmahal-plano.jpg" alt="plano del Taj Mahal">
-            </figure>
+            <!-- FOOTER SECTION-->
+            <footer id="footer">
+                <div id="footer-name"><b> &copy;Jordan Tuckler 2020</b></div>
+                <div class="social-media">
+                    <a href=""><img src="images/facebook.png" alt="Facebook logo"/></a>
+                    <a href=""><img src="images/instagram.png"alt="Instagram logo"/></a>
+                    <a href=""><img src="images/linkedin.png" alt="LinkedIn logo"/></a>
+                    <a href=""><img src="images/twitter.png" alt="Twitter logo"/></a>
+                    <a href=""><img src="images/mail1.png" alt="Email logo"/></a>
+                </div>
+                <div id="below-footer">
+                From Nicaragua <img src ="images/love.png" title="Love" alt="Heart icon" />
+                </div>
         </div>
-        <hr>
-        <footer>
-            <p><b>Jordan Tuckler&copy; 2019</b></p>
-        </footer>
-
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

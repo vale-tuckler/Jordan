@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "luxia";
+    src: url("/home/lazy_bird/Downloads/Fonts/webfontkit-Luxia/luxia-display-webfont.woff");
+    }
+ 
+ body{
+ font-family: luxia;
+ margin: 1.5%;
+ padding:1.5%;
+ font-size:115%;
+ text-align:justify;
+ line-height: 170%;
+ color:whitesmoke;
+ }
+ body{
+    background-color:black;
+ }
+
+ #logo{
+ display:inline-block;
+ height:10%;
+ width:10%;
+ margin-bottom:-1%;
+ background-color: none;
+ border-radius:5px;
+ }
+ #header{
+margin-left:8%;
+margin-top:1%;
+margin-bottom:5%;
+ }
+ a{
+ text-decoration: none;
+ text-align:center;
+ font-size:145%;
+ margin:2%;
+ padding:3%;
+ color:whitesmoke;
+ }
+ 
+ a:hover{
+    color:#8D0B93;
+    text-decoration: overline;
+    text-decoration-color: #8D0B93;
+ }
+ footer{
+    margin:10% 10% 15% 0;
+}
+ #footer{
+    margin-top:20%;
+    margin-bottom: -3%;
+ }
+
+ #footer-name{
+    display:flex;
+    justify-content: space-evenly;
+    font-size: 120%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+ } 
+.grid-container{
+    display:grid;  
+    grid-template-columns: auto auto;
+    grid-row-gap: auto; 
+    margin-right:10%;
+    font-size:110%;
+    line-height: 180%;
+    font-weight:lighter;
+}
+ .social-media{
+    padding: 0;
+    margin-left:30%;
+ }
+ .social-media img{
+     display: grid;
+     grid-template-columns: auto;
+     width:10%;
+     height: 10%;
+     margin: 5%;
+ }
+ .grid-item img{
+     display:block;
+     width: 30%;
+     height:30%;
+ }
+ #form input{
+     border-radius: 3px;
+     margin:2%;
+     background-color: darkgrey;
+     color: black;
+     font-weight: bolder;
+     font-family:'lexia';
+     font-size:70%;
+     text-decoration-line: none;
+ }
+ #form label{
+     font-style:italic;
+ }
+ #button{
+    font-family:'luxia';
+     height:12%;
+     width:12%; 
+     padding:2.5%;     
+     font-size:80%;
+     border-radius:5px;
+     background-color:goldenrod;
+     border-color: goldenrod; 
+     margin-top:8%;
+     margin-left:20%;
+ }
+/* .grid-item img{
+ }
+ */
+ #below-footer{
+    margin-top:1.5%;
+    margin-left: 15%;
+    display:flex;
+    justify-content:center;
+    color: white;
+    font-size:90%;
+ }
+ #below-footer img{
+    width: 5%;
+    height: 5%;
+    margin-top: -1.2%!important;
+
+ }
