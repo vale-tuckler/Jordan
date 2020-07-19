@@ -22,7 +22,6 @@
  width:10%;
  margin-bottom:-1%;
  background-color: none;
- border-radius:5px;
  }
  #header{
 margin-left:8%;
@@ -32,16 +31,15 @@ margin-bottom:5%;
  a{
  text-decoration: none;
  text-align:center;
- font-size:145%;
+ font-size:135%;
  margin:2%;
  padding:3%;
  color:whitesmoke;
  }
  
  a:hover{
-    color:#8D0B93;
-    text-decoration: overline;
-    text-decoration-color: #8D0B93;
+   color:#667eea;
+   text-decoration:none;
  }
  footer{
     margin:10% 10% 15% 0;
@@ -74,8 +72,8 @@ margin-bottom:5%;
  .social-media img{
      display: grid;
      grid-template-columns: auto;
-     width:10%;
-     height: 10%;
+     width:12%;
+     height: 12%;
      margin: 5%;
  }
  .grid-item img{
@@ -98,15 +96,19 @@ margin-bottom:5%;
  }
  #button{
     font-family:'luxia';
-     height:12%;
-     width:12%; 
+     height:60px;
+     width:80px; 
      padding:2.5%;     
      font-size:80%;
      border-radius:5px;
-     background-color:goldenrod;
-     border-color: goldenrod; 
+     background-color:#00783e;
+     border-color: #00783e;
+     color:whitesmoke; 
      margin-top:8%;
      margin-left:20%;
+     text-align: center;
+     display:flex;
+     align-content: center;
  }
 /* .grid-item img{
  }
@@ -125,3 +127,16 @@ margin-bottom:5%;
     margin-top: -1.2%!important;
 
  }
+ #back-to-top{
+   justify-content: center;
+   margin-left:43%;
+   margin-top:4%;
+}
+#back-to-top > a{
+   font-size:90% !important;
+   text-decoration:underline;
+}
+#back-to-top a:hover{
+   color:#667eea;
+   text-decoration:none;
+}
