@@ -1,12 +1,19 @@
 @font-face{
-    font-family:"luxia";
-    src: url("/home/lazy_bird/Downloads/Fonts/webfontkit-Luxia/luxia-regular-webfont.woff");
+    font-family: "trebuchet-regular";
+    src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/trebuc.woff");
+    font-family: "trebuchet-italic";
+     src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/Trebuchet-MS-Italic.woff");     
+    font-family: "futura-book";
+    src: url("/home/lazy_bird/Downloads/Fonts/Futura Book - converted/Futura-Book.woff");
+    font-family: "futura-light";
+    src: url("/home/lazy_bird/Downloads/Fonts/Futura Light - Converted/FuturaBT-Light.woff");
 }
+ 
 /* Body */
 body{
     background-color: black;
     color:white;
-    font-family:"luxia";
+    font-family:"trebuchet-regular";
 }
 /* Header */
 #logo{
@@ -42,6 +49,7 @@ h1{
     font-weight: bold;
 }
 .title{
+    font-family:"futura-book";
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
     color: black;
     padding: 0.6%;
@@ -107,6 +115,7 @@ h1{
     text-decoration:none;
 }
 .text{
+    font-family:"futura-light";
     margin-left:15%;
     margin-right:15%;
     margin-top:4%;

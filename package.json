@@ -4,7 +4,9 @@
   "description": "Portfolio project",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "gsap": "file:node_modules/gsap-bonus.tgz",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {},
   "scripts": {

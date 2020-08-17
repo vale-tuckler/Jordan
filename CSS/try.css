@@ -1,0 +1,22 @@
+.title{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+    padding: 2%;
+    border: 7px solid grey;
+    margin-bottom: 10%;
+}
+.span{
+    padding: 3%;
+    border: 5px solid grey;
+}
+.left{
+    margin-left:20%;
+}
+.right{
+    margin-left:20%;
+}
+@media screen and (min-width:600px){
+    .title{
+        border: 5px solid blue;
+    }
+}

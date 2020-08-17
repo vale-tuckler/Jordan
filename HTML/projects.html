@@ -9,24 +9,24 @@
     <body id="proyectos">
     <div id="container">
         <header id="header">
-            <a href="home.html"><img src="../images/jordan-logo.png" alt ="Logo de Jordan Tuckler" title="&copy; Jordan Tuckler" id="logo"/></a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About me</a>
-            <a href="contact.html">Contact</a><br>            
+            <a href="home.html" class="header-link"><img src="../images/jordan-logo.png" alt ="Logo de Jordan Tuckler" title="&copy; Jordan Tuckler" id="logo"/></a>
+            <a href="projects.html" class="header-link">Projects</a>
+            <a href="about.html" class="header-link">About me</a>
+            <a href="contact.html" class="header-link">Contact</a><br>            
         </header>
         <h1 class="main-title">My Projects</h1>
 
         <div class ="grid-container">
                 <div class="grid-item">
                     <a href="projectExpo.html#altamirano-project">
-                        <img src="../images/Residencia-altamirano/residenciaAltamira2.png" alt="Residence" title="Altamirano's residence" class="project-img"/>
+                        <img src="../images/Residencia-altamirano/residenciaAltamira2.png" alt="Residence" title="Altamirano's residence" class="project-img" id="altamirano"/>
                     </a>                
                 </div>
                 <div class="paragraph">
                     <p class="centered title">
                         Altamirano Residence project.
                     </p>
-                   <p class="centered">                    
+                   <p class="centered description">                    
                         This project was built using Autodesk Revit Architecture (All Versions) Lumion.
                    </p>                   
                    <p class="centered click">
@@ -35,14 +35,14 @@
                 </div>            
                 <div class = "grid-item">
                     <a href="projectExpo.html#apartments-jtl">                        
-                        <img src="../images/Mini-apartamentos/miniJTL1.png" alt="mini apartments" title="Mini apartment JTL" class="project-img"/>
+                        <img src="../images/Mini-apartamentos/miniJTL1.png" alt="mini apartments" title="Mini apartment JTL" class="project-img" id="JTL"/>
                     </a>                    
                 </div>
                 <div class="paragraph">
                     <p class = "centered title">
                         Mini apartments JTL
                     </p>
-                    <p class="centered">
+                    <p class="centered description">
                         This project was built with Autodesk Revit Lumion.<br>
                     </p>
                     <p class="centered click">
@@ -51,7 +51,7 @@
                 </div>
                 <div class="grid-item">
                     <a href="projectExpo.html#miami">                        
-                        <img src="../images/Greenwood-Miami/greenwood2.png" alt="Miami, Florida apartment" title="Miami apartment" class="project-img"/>    
+                        <img src="../images/Greenwood-Miami/greenwood2.png" alt="Miami, Florida apartment" title="Miami apartment" class="project-img" id="greenwood"/>    
                     </a>                    
                 </div>            
 
@@ -59,7 +59,7 @@
                     <p class="centered title">
                         Facade proposals - Greenwood St Houses, Miami, FL.
                     </p>            
-                    <p class="centered">
+                    <p class="centered description">
                         This project was used with Autodesk Revit and Lumion.
                     </p>
                     <p class="centered click">
@@ -84,5 +84,7 @@
                     <a href="#header">Go back to top</a>
                 </div>                
         </div>
+        <script src="../Javascript/gsap.js"></script>
+        <script src="../Javascript/projects.js"></script>
      </body>
 </html>

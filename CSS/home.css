@@ -1,10 +1,17 @@
-@font-face {
-   font-family: "luxia";
-   src: url("/home/lazy_bird/Downloads/Fonts/webfontkit-Luxia/luxia-display-webfont.woff");
-   }
+@font-face{
+   font-family: "trebuchet-regular";
+   src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/trebuc.woff");
+   font-family: "trebuchet-italic";
+    src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/Trebuchet-MS-Italic.woff");     
+   font-family: "futura-book";
+   src: url("/home/lazy_bird/Downloads/Fonts/Futura Book - converted/Futura-Book.woff");
+   font-family: "futura-light";
+   src: url("/home/lazy_bird/Downloads/Fonts/Futura Light - Converted/FuturaBT-Light.woff");
+}
+
 
 body{
-font-family: luxia;
+font-family:"trebuchet-regular";
 margin: 1.5%;
 padding:1.5%;
 font-size:115%;
@@ -31,26 +38,32 @@ display:inline-block;
 }
 
 #center{
+visibility:hidden;
 display: flex;
 justify-content: center;
 color: black;
-/*font-weight: bolder;*/
 font-size: 470%;
-margin-top: 45%;
+background-color: white;
+margin-top: 20%;
+margin-left: 25%;
 padding: 2%;
+width: 50%;
 }
 #home-phrase{
+   visibility:hidden;
    display:flex;
    justify-content: center;
    font-size: 120%;
-   margin-top:2%;
-   margin-bottom: 50%;
+   margin-top:4%;
+   margin-bottom: -10%;
    color: black;
    font-weight: lighter;
    
 }
-
-
+.white{
+   color: white;
+   margin-left: 0.5%;
+}
 #below-footer{
    margin-top:1.5%;
    margin-left: 15%;
@@ -157,7 +170,7 @@ animation:20s slider infinite;
 
  #back-to-top{
    justify-content: center;
-   margin-left:43%;
+   margin-left:44%;
    margin-top:4%;
 }
 #back-to-top > a{
@@ -167,4 +180,56 @@ animation:20s slider infinite;
 #back-to-top a:hover{
    color:#667eea;
    text-decoration:none;
+}
+
+@media all and (max-width:600px){
+   #logo{
+      height:15%;
+      width:15%;
+      margin-bottom:-1%;
+      background-color: none;
+      display:inline-block;
+      }
+      
+      #center{
+      /*visibility:hidden;*/
+      visibility: visible;
+      display: inline-flex;
+      justify-content: center;
+      color: black;
+      font-size: 300px;
+      background-color: white;
+      margin-top: 20%;
+      margin-bottom: 15%;
+      margin-left: 25%;
+      padding: 2%;
+      width: 50%;
+      }
+      #home-phrase{
+      /*visibility:hidden;*/
+      visibility:visible;
+      display:flex;
+      justify-content: center;
+      font-size:90%;
+      margin-top:4%;
+      margin-bottom: -10%;
+      color: black;
+      font-weight: lighter;
+         
+      }
+      #header{
+      display: inline;
+      margin-left:12%;
+      padding:3%;
+      margin-top:10%;
+      margin-bottom:5%;
+      }
+      a{
+      text-decoration: none;
+      text-align:center;
+      font-size:50%;
+      margin:2%;
+      padding:2%;
+      color:whitesmoke;
+      }
 }

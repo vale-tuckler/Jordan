@@ -1,10 +1,17 @@
-@font-face {
-    font-family: "luxia";
-    src: url("/home/lazy_bird/Downloads/Fonts/webfontkit-Luxia/luxia-display-webfont.woff");
-    }
+@font-face{
+   font-family: "trebuchet-regular";
+   src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/trebuc.woff");
+   font-family: "trebuchet-italic";
+    src: url("/home/lazy_bird/Downloads/Fonts/trebuchet-ms-2-cufonfonts-webfont/Trebuchet-MS-Italic.woff");     
+   font-family: "futura-book";
+   src: url("/home/lazy_bird/Downloads/Fonts/Futura Book - converted/Futura-Book.woff");
+   font-family: "futura-light";
+   src: url("/home/lazy_bird/Downloads/Fonts/Futura Light - Converted/FuturaBT-Light.woff");
+}
+
  
  body{
- font-family: luxia;
+ font-family: "trebuchet-regular";
  margin: 1.5%;
  padding:1.5%;
  font-size:115%;
@@ -13,20 +20,17 @@
  color:white;
  }
  body{
-    /*background-image: url('/home/lazy_bird/Desktop/Jordan/images/background6.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    background-image: url('/home/lazy_bird/Desktop/Jordan/images/background3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-image: url('/home/lazy_bird/Desktop/Jordan/images/background3.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
  }
 
  #logo{
- height:10%;
- width:10%;
- margin-bottom:-1%;
- background-color: none;
- display:inline-block;
+   height:10%;
+   width:10%;
+   margin-bottom:-1%;
+   background-color: none;
+   display:inline-block;
  }
  #header{
     margin-left:8%;
@@ -34,12 +38,12 @@
     margin-bottom:5%;
  }
  a{
- text-decoration: none;
- text-align:center;
- font-size:135%;
- margin:2%;
- padding:3%;
- color:whitesmoke;
+   text-decoration: none;
+   text-align:center;
+   font-size:135%;
+   margin:2%;
+   padding:3%;
+   color:whitesmoke;
  }
  
  a:hover{
@@ -50,6 +54,7 @@
      text-align: center;
  }
  #text{
+    font-family:"futura-light";
      margin-left:15%;
      margin-right:15%;
      margin-top:4%;
