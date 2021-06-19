@@ -1,0 +1,12 @@
+.nav-link{
+    color: #FFFFFF !important;
+}
+
+@media screen and (min-width:800px){
+    .nav-link{
+        display:flex !important;
+        align-items: center;
+        justify-content:flex-start !important;
+        font-size: large;
+    }
+}

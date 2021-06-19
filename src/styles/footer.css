@@ -1,0 +1,14 @@
+/*.myNavbar{
+    background-color:gray;
+    color:black;
+}
+*/
+.myFooter{
+    display:flex;
+    justify-content:flex-end;
+    align-content:center;
+    margin-top:25%;
+}
+img{
+    display:inline-block;
+}
