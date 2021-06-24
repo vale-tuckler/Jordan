@@ -7,31 +7,54 @@
 
 }
 
+/*  M O B I L E    V E R S I O N  */
+
 @media screen and (min-width: 400px){    
     #title-container{
         display:flex;
         align-items: flex-end!important;
         justify-content: space-around;
         width:100%;      
-        height:50%;  
+        height:45%;          
     }
 
     #title{
         display:inline-flex;  
-        align-items: flex-end;  
+        align-items:center;  
         align-content: center!important;    
         justify-content: space-around !important;
-        height:20%;
-        width:100%;
-        background-color: #808080;
-        color:#ffebcd;
+        height:30%;
+        width:55%;        
+        background-color:#777777;
+        color:#000000;
         padding:2%;
         font-weight:bold;          
+        font-size:200%;
+        border-radius: 0 15px 0 15px;
     }   
 }
+
+/*  D E S K T O P    V E R S I O N  */
 @media screen and (min-width: 800px){
-    #home{
-        background-image:none;
-        background-color:chocolate;
+    #title-container{
+        display:flex;
+        align-items: flex-end!important;
+        justify-content: space-around;
+        width:100%;      
+        height:50%;          
+    }
+    #title{
+        display:inline-flex;  
+        align-items:center;  
+        align-content: center!important;    
+        justify-content: space-around !important;
+        height:25%;
+        width:25%;
+        background-color:#777777;
+        color:#000000;
+        padding:2%;
+        font-weight:bold;          
+        font-size:200%;
+        border-radius: 0 15px 0 15px;
     }
 }

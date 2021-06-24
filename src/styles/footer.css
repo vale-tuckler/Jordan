@@ -1,14 +1,9 @@
-/*.myNavbar{
-    background-color:gray;
-    color:black;
+body{
+    margin:0;
+    padding:0;
 }
-*/
-.myFooter{
-    display:flex;
-    justify-content:flex-end;
-    align-content:center;
-    margin-top:25%;
-}
-img{
-    display:inline-block;
+
+.btn{
+    width:45%;
+    height:95%;
 }
