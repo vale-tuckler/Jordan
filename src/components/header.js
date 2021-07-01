@@ -12,7 +12,7 @@ function Header(){
                             </Link>                               
                         </span>
                         <span className="link-container">
-                            <Link href="/projects" className="nav-link" id="projects-link">
+                            <Link to="/projects" className="nav-link" id="projects-link">
                                 Projects
                             </Link>
                         </span>

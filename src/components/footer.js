@@ -11,17 +11,17 @@ function myFooter(){
                 
                 <a href="https://www.behance.net/jordantuckler">
                     {/*Button background color = dark*/}
-                    <img src={behance} alt="Behance logo" title = "Behance logo" className="btn btn-info btn-sm btn-floating bg-dark mx-3"/>                    
+                    <img src={behance} alt="Behance logo" title = "Behance logo" className="btn btn-warning btn-sm btn-floating bg-dark mx-3"/>                    
                 </a>    
 
                 <a href="https://www.instagram.com/jordantuckler/">
                     {/*Button background color = dark*/}                    
-                    <img src={instagram} alt="Instagram logo"  title="Instagram logo"className="btn btn-info btn-sm btn-floating bg-dark mx-3" />                    
+                    <img src={instagram} alt="Instagram logo"  title="Instagram logo"className="btn btn-warning btn-sm btn-floating bg-dark mx-3" />                    
                 </a>                                            
 
                 <a href="mailto:jordantuckler@gmail.com">
                     {/*Background color = dark*/}                    
-                    <img src={mail} alt="Mail logo" title="Mail logo" className="btn btn-info btn-sm btn-foating bg-dark mx-3"/>
+                    <img src={mail} alt="Mail logo" title="Mail logo" className="btn btn-warning btn-sm btn-foating bg-dark mx-3"/>
                 </a>                                
             </div>
 

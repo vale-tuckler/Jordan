@@ -1,0 +1,19 @@
+@media screen and (min-width:400px){
+    .projects-container{
+        background-color: #584D3D;
+    }
+    #third-image{
+        width:96%;
+        height:96%;
+    }
+    .project-face{
+        margin:2%;
+        width:96%;
+        height:50%;
+        border-radius: 0 15px 0 15px;
+        
+    }
+    .first-container{
+        margin-top:3%;
+    }
+}
