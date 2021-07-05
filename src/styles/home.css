@@ -3,12 +3,10 @@
    width:100vw;
 }
 #home{
-   background-image:url("../imgs/home-background.png");
-
+   background-image:url("../imgs/ribbonChapel.png");
 }
 
 /*  M O B I L E    V E R S I O N  */
-
 @media screen and (min-width: 400px){    
     #title-container{
         display:flex;
@@ -25,8 +23,10 @@
         justify-content: space-around !important;
         height:30%;
         width:55%;        
-        background-color:#777777;
-        color:#000000;
+        background-color:#777777; /*REGULAR GREY*/
+        /*background-color: yellow;*/
+        /*color:#000000;*/
+        color:whitesmoke;
         padding:2%;
         font-weight:bold;          
         font-size:200%;
@@ -50,8 +50,9 @@
         justify-content: space-around !important;
         height:25%;
         width:25%;
-        background-color:#777777;
-        color:#000000;
+        background-color:#777777;        
+        /*color:#000000;*/
+        color:white;
         padding:2%;
         font-weight:bold;          
         font-size:200%;
