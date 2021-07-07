@@ -29,7 +29,7 @@ import '../styles/projects-info.css';
 
 function ProjectsInfo(){
     return(
-        <div>
+        <div id="projectsInfoContainer">
             <Header/>
                     
                     {/*MINIMALIST LOFT*/}
@@ -77,8 +77,8 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2>What is Lorem Ipsum?</h2>
-                    <p className="d-flex justify-content">
+                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
+                    <p className="Text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type 
@@ -135,8 +135,8 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2>What is Lorem Ipsum?</h2>
-                    <p className="d-flex justify-content">
+                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
+                    <p className="Text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type 
@@ -213,8 +213,8 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription" id="thirdDescription">
-                    <h2>What is Lorem Ipsum?</h2>
-                    <p className="d-flex justify-content">
+                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
+                    <p className="Text">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to make a type 

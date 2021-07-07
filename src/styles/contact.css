@@ -1,0 +1,74 @@
+
+@media screen and (min-width:300px){
+
+        /* SPLITS SCREEN IN HALF*/
+    .split{
+        height:150%;
+        width:80%;
+        margin-left:10%;
+        display:block;
+    }
+
+    /* STYLING THE LEFT SIDE*/
+    .left{    
+        background-color:aquamarine;
+    }
+
+    /* STYLING THE RIGHT SIDE */
+    .right{
+        background-color:chartreuse;
+    }
+
+    /* CENTERS THE CONTENT HORIZONTALLY & VERTICALLY*/
+
+    #formTitle{
+        font-size:300%;        
+    } 
+
+    #circle{
+        width:100px;
+        height:100px;
+        border-radius:50%;
+        background-color:red;
+    }  
+}
+
+@media screen and (min-width:600px){
+    /* SPLITS SCREEN IN HALF*/
+    .split{
+        height:55%;
+        width:50%;
+        position:fixed;
+        z-index:1;
+        overflow-x:hidden;
+        padding-top:1%;
+    }
+
+    /* STYLING THE LEFT SIDE*/
+    .left{
+    left:0;
+    background-color:aquamarine;
+    }
+
+    /* STYLING THE RIGHT SIDE */
+    .right{
+    right:0;
+    background-color:chartreuse;
+    }
+
+    /* CENTERS THE CONTECT HORIZONTALLY & VERTICALLY*/
+    .centered{
+    position:absolute;
+    top:35%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+    }
+
+
+    #formTitle{
+        font-size:500%;
+        text-decoration:underline blueviolet;
+    }
+
+}

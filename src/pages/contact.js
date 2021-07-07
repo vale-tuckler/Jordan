@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import '../styles/contact.css';
 
 function Contact(){
     return(
         <div>
             <Header/>
-            <h1>This is my contact page</h1>
+                <div className="main-container container-fluid">
+                                                
+                </div>
             <Footer /> 
         </div>
     );

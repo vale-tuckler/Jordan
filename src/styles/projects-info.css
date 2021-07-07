@@ -1,8 +1,11 @@
+#projectsInfoContainer{
+    background-color:#3E885B;    
+}
 @media screen and (min-width:400px){
     .carousel{
-        width:90% !important;
+        width:95% !important;
         height:25% !important;
-        margin-left:5%;
+        margin-left:3%;
         margin-top:3%;
     }
     .projectImg{
@@ -15,13 +18,47 @@
         height:65%;
     }
     #thirdDescription{
-        margin-top:5%;
-        margin-bottom:25% !important;
+        padding-bottom:13% !important;        
     }    
+    .projectDescription{
+        margin-top:10%;
+        margin-bottom:10%;
+    }
+    .projectTitle{
+        /*margin-left:30%;*/
+        display:flex;
+        justify-content: center;
+    }
+    .Text{
+        display:flex;
+        justify-content:center;
+        text-align: justify;
+        margin:3%;
+
+    }
 }
 
 @media screen and (min-width:600px){
     #minimalistLoft{
         margin-top:0!important;
+    }    
+    .projectDescription{
+        margin-top:2%;
+        margin-bottom:10%;
+    }
+    .projectTitle{
+        display:flex;
+        justify-content: center;
+    }
+    .Text{
+        display:flex;
+        justify-content:center;
+        text-align: justify;
+
+    }
+    #projectsInfoContainer{
+        margin:0 !important;
+        padding:0 !important;
+        height:fit-content;
     }
 }
