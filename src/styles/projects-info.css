@@ -3,7 +3,6 @@
     background: #76b852;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #8DC26F, #76b852);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 @media screen and (min-width:400px){
     .carousel{
@@ -46,11 +45,30 @@ background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, F
     #minimalistLoft{
         margin-top:0!important;
     }    
+    .carousel{
+        width:95% !important;
+        height:25% !important;
+        margin-left:3%;
+        margin-top:3%;
+    }
+    .projectImg{
+        width:100%;
+        height:100%;
+    }
+
+    .imgContainer{
+        width:98%;
+        height:65%;
+    }
+    #thirdDescription{
+        padding-bottom:13% !important;        
+    }    
     .projectDescription{
-        margin-top:2%;
-        margin-bottom:10%;
+        margin-top:5%;
+        margin-bottom:1%;
     }
     .projectTitle{
+        /*margin-left:30%;*/
         display:flex;
         justify-content: center;
     }
@@ -58,11 +76,8 @@ background: linear-gradient(to right, #8DC26F, #76b852); /* W3C, IE 10+/ Edge, F
         display:flex;
         justify-content:center;
         text-align: justify;
+        margin:3%;
 
     }
-    #projectsInfoContainer{
-        margin:0 !important;
-        padding:0 !important;
-        height:fit-content;
-    }
+
 }

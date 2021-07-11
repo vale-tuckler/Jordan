@@ -1,6 +1,6 @@
-.about-container{
-    background-color:#85BDA6;
-    height:100%;
+#section{
+    background-color:#85BDA6 !important;  
+    height:200vh;  
 }
 
 @media screen and (min-width:400px){
