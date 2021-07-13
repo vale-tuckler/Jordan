@@ -1,11 +1,8 @@
 @media screen and (min-width:400px){
     .projects-container{
-        /*background-color: #584D3D; BROWN*/
-        /*background-color:#2F4B26;*/
-        background: #5a3f37; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #5a3f37, #2c7744); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #5a3f37, #2c7744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #4C5B61;
         height:110%;
+        overflow-x: hidden;
     }
     #third-image{
         width:96%;
@@ -14,9 +11,7 @@
     .project-face{
         margin:2%;
         width:96%;
-        height:50%;
-        border-radius: 0 15px 0 15px;
-        
+        height:50%;        
     }
     .first-container{
         margin-top:3%;
@@ -25,33 +20,33 @@
         height:100% !important;
         margin-bottom:25%;
     }
+    .title{
+        color:black;
+        font-style: italic;
+    }
 }
 
 @media screen and (min-width:600px){
-    .projects-container{     
-        /*background-color:#2F4B26;*/
-        background: #5a3f37; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #5a3f37, #2c7744); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #5a3f37, #2c7744); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    .projects-container{             
+        background: #4C5B61;
         height:100%;
         overflow-x: hidden;
     }
     #third-image{
-        width:96%;
-        height:100%;
+        width:90%;
+        height:5%;
     }
     .project-face{
-        margin:3%;
-        width:96%;
-        height:50%;
-        border-radius: 0 15px 0 15px;
-        
+        margin:2%;
+        margin-left:5%;
+        width:90%;
+        height:5% !important;        
     }
     .first-container{
         margin-top:3%;
     }
     .third-container{
-        height:100% !important;
-        margin-bottom:15%;
+        height:10% !important;
+        margin-bottom:10%;
     }
 }

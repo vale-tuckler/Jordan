@@ -12,6 +12,7 @@ function Projects(){
         <div className="projects-container">
             <Header/>            
             <div className="container-fluid first-container">
+                <h1 className="title justify-content">Minimalist Industrial Loft</h1>
                 <Link to="/projects_info#minimalistLoft">
                     <img 
                         src={loft} 
@@ -22,6 +23,7 @@ function Projects(){
                 </Link>            
             </div>
             <div className="container-fluid">
+                <h1 className="title justify-content">Efficient Apartment</h1>
                 <Link to="/projects_info#efficiencyApt">
                     <img 
                         src={efficiencyApt} 
@@ -32,6 +34,7 @@ function Projects(){
                 </Link>
             </div>
             <div className="container-fluid third-container">
+                <h1 className="title justify-content">Apartment made of containers</h1>
                 <Link to="/projects_info#containersApt">
                     <img 
                         src={containerApt} 
