@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import JLogo from '../imgs/jordan-logo.png';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
 import "../styles/header.css";
 
 function Header(){
+    function headerAnimations(){
+        let headerTimeline = gsap.timeline();
+        headerTimeline
+            .fromTo(".navbar",{opacity:0},{duration:1, opacity:1, ease: "circ.out", visibility:"visible"});
+            return headerTimeline;
+    };
+    useEffect(() => {
+        headerAnimations();
+    });
     return(        
             <nav className="navbar navbar-expand-lg navbar-light bg-dark container-fluid">                          
                         <span className="link-container">

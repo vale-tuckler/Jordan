@@ -1,6 +1,7 @@
 import React from 'react';
 import Axios from 'axios';
-import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/contact.css';
@@ -8,7 +9,7 @@ import '../styles/contact.css';
 export default class Contact extends React.Component{
     constructor(props){
         super(props);
-        this.state={name:"", email:"", message:""}
+        this.state = {name:"", email:"", message:""}
 
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
@@ -43,50 +44,49 @@ export default class Contact extends React.Component{
     };
     render(){
         return(
-            <div>
+            <div id="contact">
                 <Header/>
-                    <div className="formContainer">
-                        <h2>
-                            Send a message <span role="img">⚡️</span>
-                        </h2>
-                        <form onSubmit={this.onSubmit}>
-                            <div className="user-box">
-                                <label htmlFor="userName">Name:</label>
-                                <input  
-                                    name="userName" 
-                                    id="userName" 
-                                    className="input"
+                    <h1 id="contactTitle">Get in touch!</h1>
+                       <Form id="form" onSubmit={this.onSubmit}>
+                           <Form.Group className="mb-3 w-50 formGroup" controlId="name">                                
+                                <Form.Control 
+                                    type="text" 
+                                    placeholder="Write your name here..." 
+                                    className="d-flex justify-content-center formControl"
                                     onChange={this.onChangeName}
-                                />                            
-                            </div>
-                            <div className="user-box">
-                                <label htmlFor="userEmail">Email:</label>
-                                <input  
-                                    name="userEmail" 
-                                    id="userEmail" 
-                                    className="input"
+                                />
+                           </Form.Group>    
+                           <Form.Group className="mb-3 w-50 formGroup" controlId="email">
+                                {/*<Form.Label className="label">Email</Form.Label>*/}
+                                <Form.Control 
+                                    type="email" 
+                                    placeholder="Write your email here..."
+                                    className="formControl"
                                     onChange={this.onChangeEmail}
-                                />                            
-                            </div>
-                            <div className="user-box">
-                                <label htmlFor="userMsg">Message:</label>
-                                <textarea 
-                                    name="userMsg" 
-                                    id="userMsg" 
-                                    className="input"
+                                />
+                           </Form.Group>
+                           <Form.Group className="mb-3 w-50 formGroup" controlId="message">
+                                {/*<Form.Label className="label">Message</Form.Label>*/}
+                                <Form.Control as="textarea" 
+                                    rows={4} 
+                                    placeholder="Send a message!"
+                                    className="formControl"
                                     onChange={this.onChangeMsg}
-                                >
-                                </textarea>
-                            </div>
-                            <button type="submit" id="submitBtn">                            
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    Submit
-                            </button>                        
-                        </form>
-                    </div>
+                                />
+                           </Form.Group>
+                           {/* Form label*/}
+                        <div className="d-flex mb-2 justify-content-center">
+                            <Button 
+                                variant = "outline-warning" 
+                                as = "input"
+                                type = "submit"                                
+                                value = "Submit"
+                                lg={2}
+                                rows={3}                                
+                            />                                                                  
+                        </div>
+                       </Form>
+
                 <Footer />            
             </div>
         );

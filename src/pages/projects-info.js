@@ -34,123 +34,108 @@ function ProjectsInfo(){
                     
                     {/*MINIMALIST LOFT*/}
 
-                <Carousel id="minimalistLoft">
+                <Carousel id="minimalistLoft" fade>
                     <Carousel.Item>
-                       <div className="imgContainer">
                             <img 
                                 src={minimalistLoft1} 
                                 alt="Minimalist loft 1" 
                                 title="Minimalist loft picture 1"
                                 className="d-block projectImg"
                             />
-                       </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={minimalistLoft2}
                                 alt="Minimalist loft 2"
                                 title="Minimalist loft picture 2"
                                 className="d-block projectImg"
-                            />
-                        </div>
+                            />                   
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={minimalistLoft3}
                                 alt="Minimalist loft 3"
                                 title="Minimalist loft picture 3"
                                 className="d-block projectImg"
-                            />
-                        </div>
+                            />                   
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={minimalistLoft4}
                                 alt="Minimalist loft 4"
                                 title="Minimalist loft picture 4"
                                 className="d-block projectImg"
-                            />
-                        </div>
+                            />                   
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
-                    <p className="Text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into 
-                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
-                    </p>
+                    <h2 className="projectTitle">Minimalist Industrial Loft Project Description</h2>
+                    <div className="textContainer">
+                        <p className="Text">
+                            A modern architectural design that takes minimalism as its central 
+                            philosophy.                    
+                        </p>
+                        <p className="Text">
+                            Marked by clarity, purpose, and intentionality, this project keeps the 
+                            most valuable things in an apartment 
+                            and removes everything that doesn't align with them,
+                            resulting in a contemporary-looking and
+                            comfortabe place to live that never loses its original identity and core principles.
+
+                        </p>
+                    </div>                    
                 </div>
 
                 {/* EFFICIENCY APARTMENT*/}
 
-                <Carousel id="efficiencyApt">
+                <Carousel id="efficiencyApt" fade>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={efficiencyApt1}
                                 alt="Efficiency apartment 1"
                                 title="Efficiency apartment picture 1"
                                 className="d-block projectImg"
-                            />
-                        </div>
+                            />                   
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={efficiencyApt2}
                                 alt="Efficiency apartment 2"
                                 title="Efficiency apartment picture 2"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={efficiencyApt3}
                                 alt="Efficiency apartment 3"
                                 title="Efficiency apartment picture 3"
                                 className="d-block projectImg"
                             />                        
-                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={efficiencyApt4}
                                 alt="Efficiency apartment 4"
                                 title="Efficiency apartment picture 4"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
-                    <p className="Text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into 
-                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
-                    </p>
+                    <h2 className="projectTitle">Efficiency Apartment Project Description</h2>
+                    <div className="textContainer">
+                        <p className="Text">
+                            A design made taking into consideration the usual energy demands of an 
+                            apartment to make it energy and resource efficient by allocating the most
+                            essential needs of the apartment in a single room.
+                        </p>
+                    </div>
                 </div>
 
                 {/* CONTAINERS APARTMENT */}
 
-                <Carousel id="containersApt">
+                <Carousel id="containersApt"fade>
                     <Carousel.Item>
                         <div className="imgContainer">
                             <img 
@@ -172,58 +157,48 @@ function ProjectsInfo(){
                         </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={containersApt3}
                                 alt="Containers apartment 3"
                                 title="Containers apartment picture 3"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={containersApt4}
                                 alt="Containers apartment 4"
                                 title="Containers apartment picture 4"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={containersApt5}
                                 alt="Containers apartment 5"
                                 title="Containers apartment picture 5"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <div className="imgContainer">
                             <img 
                                 src={containersApt6}
                                 alt="Containers apartment 6"
                                 title="Containers apartment picture 6"
                                 className="d-block projectImg"
                             />
-                        </div>
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription" id="thirdDescription">
-                    <h2 className="projectTitle">What is Lorem Ipsum?</h2>
-                    <p className="Text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type 
-                        specimen book. It has survived not only five centuries, but also the leap into 
-                        electronic typesetting, remaining essentially unchanged. It was popularised in 
-                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-                        and more recently with desktop publishing software like Aldus PageMaker 
-                        including versions of Lorem Ipsum.
-                    </p>
+                    <h2 className="projectTitle">Containers Apartment Project Description</h2>
+                    <div className="textContainer">
+                        <p className="Text">
+                            This design was made around the principle of recycling. Recycling can bring 
+                            new life to old products at an affordable price which makes it all the more
+                            accessible to most people, creating this way an eco-friendly cycle of 
+                            planning and construction.
+                        </p>
+                    </div>
                 </div>
             <Footer/>            
         </div>

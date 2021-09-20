@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import behance from "../imgs/behance-50.png";
+import gsap from 'gsap';
 import instagram from "../imgs/instagram-52.png";
 import mail from "../imgs/mail-50.png";
 import "../styles/footer.css";
 
 function myFooter(){
+    function footerAnimations(){
+        let footerTimeline = gsap.timeline({delay:0.5});
+        footerTimeline
+            .fromTo(".footer",
+                        {visibility:"hidden", opacity:0},
+                        {visibility:"visible", opacity:1, duration:1});
+    };
+    useEffect(() => {
+        footerAnimations();
+    });
     return(
         <footer className="footer bg-dark fixed-bottom" id="myfooter" style={{backgroundColor:"grey"}}>
             <div className="text-center container d-flex justify-content-center align-self-center py-3">

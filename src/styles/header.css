@@ -1,3 +1,6 @@
 .nav-link{
     color: #FFFFFF !important;
 }
+.navbar{
+    visibility: hidden;
+}

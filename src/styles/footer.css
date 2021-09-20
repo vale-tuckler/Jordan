@@ -7,3 +7,6 @@ body{
     width:45%;
     height:95%;
 }
+.footer{
+    visibility:hidden;
+}
