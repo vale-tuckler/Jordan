@@ -1,18 +1,20 @@
 @media screen and (min-width:400px){
     .projects-container{
-        background-color:#B589D6;       
+        background-color:#3B185F;      
         height:110%;
         overflow-x: hidden;
     }
     #third-image{
         width:96%;
         height:100%;
+        visibility: hidden;     
     }
     .project-face{
         margin:2%;
         margin-bottom: 15%;
         width:96%;
-        height:50%;        
+        height:50%;   
+        visibility: hidden;     
     }
     .first-container{
         margin-top:8%;
@@ -22,15 +24,16 @@
         margin-bottom:11%;
     }
     .title{
-        color:black;
+        color:white;
         font-style: italic;
         font-weight:lighter;
+        visibility:hidden;
     }
 }
 
 @media screen and (min-width:600px){
     .projects-container{          
-        background-color: #6A359C;
+        background-color:#3B185F;
         height:100%;
         overflow-x: hidden;
     }
@@ -52,11 +55,13 @@
         height:10% !important;
         margin-bottom:10%;
     }
+    .title{
+        color:white;
+    }
 }
 @media screen and (min-width:800px){
     .projects-container{             
-        background-color: #e4b5cb;
-        background-image: linear-gradient(315deg, #e4b5cb 0%, #722ae6 74%);
+        background-color:#3B185F;
         height:100%;
         overflow-x: hidden;
     }
@@ -67,7 +72,7 @@
     .project-face{
         margin:2%;
         margin-left:20%;
-        width:60%;
+        width:55%;
         height:4% !important;        
         margin-bottom: 10%;
     }

@@ -1,13 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import loft from '../imgs/minimalist-loft/minimalist-loft1.png';
 import efficiencyApt from '../imgs/efficiency-apt/efficiency-apt2.png';
 import containerApt from '../imgs/containers-apt/containers-apt4.png';
 import { Link } from 'react-router-dom';
 import '../styles/projects.css';
 
+gsap.registerPlugin(ScrollTrigger);
+
 function Projects(){
+    function projectsAnimation(){        
+        let projects = gsap.timeline({delay:1.3});
+
+
+        projects
+        .fromTo(".title",
+                {opacity:0},
+                {opacity:1, 
+                    visibility:"visible", 
+                    ease:"power3.inOut",
+                    duration:1})
+        .fromTo([".project-face", "#third-image"],
+                {opacity:0},
+                {opacity:1, 
+                    visibility:"visible", 
+                    ease:"power3.inOut", 
+                    duration:1, 
+                    stagger:0.35});
+        return projects;                                
+    }
+    
+    useEffect(() => {
+        projectsAnimation();
+    });
+
     return(
         <div className="projects-container">
             <Header/>            

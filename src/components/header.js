@@ -6,14 +6,14 @@ import "../styles/header.css";
 
 function Header(){
     function headerAnimations(){
-        let headerTimeline = gsap.timeline();
+        let headerTimeline = gsap.timeline({delay:0.5});
         headerTimeline
-            .fromTo(".navbar",{opacity:0},{duration:1, opacity:1, ease: "circ.out", visibility:"visible"});
+            .fromTo(".navbar",{opacity:0},{duration:1.3, opacity:1, ease: "circ.out", visibility:"visible"});
             return headerTimeline;
     };
     useEffect(() => {
         headerAnimations();
-    });
+    },[]);
     return(        
             <nav className="navbar navbar-expand-lg navbar-light bg-dark container-fluid">                          
                         <span className="link-container">

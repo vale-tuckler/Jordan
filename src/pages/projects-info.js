@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
 /* IMPORTS FOR REACT-BOOTSTRAP*/
 import { Carousel } from 'react-bootstrap';
+
+/*  IMPORTS FOR GSAP  */
+import { gsap } from 'gsap';
 
 /* IMPORTS FOR MINIMALIST LOFT PROJECT */
 import minimalistLoft1 from '../imgs/minimalist-loft/minimalist-loft1.png';
@@ -28,13 +31,38 @@ import containersApt6 from "../imgs/containers-apt/containers-apt6.png";
 import '../styles/projects-info.css';
 
 function ProjectsInfo(){
+    function infoAnimations(){
+        let infoTimeline = gsap.timeline({delay:1});
+
+        infoTimeline
+            .fromTo(".projectImg",
+                    {opacity:0},
+                    {opacity:1, 
+                        visibility:"visible",
+                        ease:"power4.in",
+                        delay:0.4,
+                        duration:1.3
+                    })
+            .fromTo(".projectDescription", 
+                    {opacity:0}, 
+                    {opacity:1, 
+                        visibility:"visible", 
+                        ease:"power2.in",                         
+                        duration:1.2
+                    });
+            return infoTimeline;
+    };
+
+    useEffect(() => {
+        infoAnimations();
+    });
     return(
         <div id="projectsInfoContainer">
             <Header/>
                     
                     {/*MINIMALIST LOFT*/}
 
-                <Carousel id="minimalistLoft" fade>
+                <Carousel variant="dark" id="minimalistLoft" fade nextLabel={false} prevLabel={false}>
                     <Carousel.Item>
                             <img 
                                 src={minimalistLoft1} 
@@ -88,7 +116,7 @@ function ProjectsInfo(){
 
                 {/* EFFICIENCY APARTMENT*/}
 
-                <Carousel id="efficiencyApt" fade>
+                <Carousel variant ="dark" id="efficiencyApt" fade nextLabel={false} prevLabel={false}>
                     <Carousel.Item>
                             <img 
                                 src={efficiencyApt1}
@@ -135,7 +163,7 @@ function ProjectsInfo(){
 
                 {/* CONTAINERS APARTMENT */}
 
-                <Carousel id="containersApt"fade>
+                <Carousel variant='dark' id="containersApt" fade nextLabel={false} prevLabel={false}>
                     <Carousel.Item>
                         <div className="imgContainer">
                             <img 

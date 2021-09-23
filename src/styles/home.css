@@ -11,7 +11,7 @@ body{
 /*  M O B I L E    V E R S I O N  */
 @media screen and (min-width: 400px){    
     #home{
-        background-color:#552586;
+        background-color:#2A0944;
         overflow-x:hidden;
 
     }
@@ -29,7 +29,7 @@ body{
         justify-content: space-evenly !important;
         height:30%;
         width:100%;        
-        background-color:#552586;
+        background-color:#2A0944;
         color:white;
         padding:2%;
         font-weight:bold;          
@@ -50,7 +50,7 @@ body{
 /*  D E S K T O P    V E R S I O N  */
 @media screen and (min-width: 800px){
     #home{
-        background-color:#552586;
+        background-color:#2A0944;
         overflow-x: hidden !important;
         overflow-y: hidden;
     }
@@ -68,7 +68,7 @@ body{
         justify-content: space-around !important;
         height:25%;
         width:50%;
-        background-color:#552586;
+        background-color:#2A0944;
         color:white;
         padding:2%;
         font-weight:bold;          

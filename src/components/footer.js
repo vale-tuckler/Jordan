@@ -15,7 +15,7 @@ function myFooter(){
     };
     useEffect(() => {
         footerAnimations();
-    });
+    },[]);
     return(
         <footer className="footer bg-dark fixed-bottom" id="myfooter" style={{backgroundColor:"grey"}}>
             <div className="text-center container d-flex justify-content-center align-self-center py-3">
