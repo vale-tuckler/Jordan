@@ -1,6 +1,13 @@
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
+
+
 .nav-link{
     color: #FFFFFF !important;
 }
 .navbar{
     visibility: hidden;
+    font-family: "trebuchet";
 }

@@ -1,5 +1,16 @@
+@font-face{
+    font-family:"futura-book";
+    src: url("../fonts/futura-book-converted/FuturaBT-Light.woff") format("woff");
+}
+
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
+
 #projectsInfoContainer{
     background-color:#552586;
+    visibility: hidden;
 }
 @media screen and (min-width:400px){
     .carousel{
@@ -23,6 +34,7 @@
         margin-right:10%;
         font-size:110%;
         color:white;        
+        font-family:"futura-book";
     }
     .projectTitle{
         display:flex;
@@ -33,6 +45,7 @@
         font-style: oblique;
         font-size:185%;
         color:white;
+        font-family:"trebuchet";
     }
     .Text{
         display:flex;

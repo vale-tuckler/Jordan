@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import JLogo from '../imgs/jordan-logo.png';
+import JLogo from '../imgs/jlogo.png';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import "../styles/header.css";

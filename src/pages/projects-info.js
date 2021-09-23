@@ -35,20 +35,22 @@ function ProjectsInfo(){
         let infoTimeline = gsap.timeline({delay:1});
 
         infoTimeline
+            .fromTo("#projectsInfoContainer",
+                    {visibility:"hidden",},
+                    {visibility:"visible", ease:"power4.in", duration:1.3})
             .fromTo(".projectImg",
                     {opacity:0},
                     {opacity:1, 
                         visibility:"visible",
                         ease:"power4.in",
-                        delay:0.4,
-                        duration:1.3
+                        duration:1
                     })
             .fromTo(".projectDescription", 
                     {opacity:0}, 
                     {opacity:1, 
                         visibility:"visible", 
                         ease:"power2.in",                         
-                        duration:1.2
+                        duration:1
                     });
             return infoTimeline;
     };

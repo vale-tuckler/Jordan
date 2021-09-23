@@ -1,3 +1,13 @@
+@font-face{
+    font-family:"futura-book";
+    src: url("../fonts/futura-book-converted/FuturaBT-Light.woff") format("woff");
+}
+
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
+
 @media screen and (min-width:400px){
     #section{
         background-color:#2A0944;
@@ -10,6 +20,7 @@
         justify-content: center;  
         margin-top:8%;   
         color:white; 
+        font-family:"trebuchet";
     }
     .description{
         margin-top:3%;
@@ -17,6 +28,7 @@
         margin-right:12%;
         text-align: justify;
         color:white;
+        font-family:"futura-book";
     }
     #article{
         padding-top:6%;

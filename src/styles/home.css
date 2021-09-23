@@ -6,13 +6,17 @@ body{
    width:100vw;
    overflow-x: hidden;
 }
-
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
 
 /*  M O B I L E    V E R S I O N  */
 @media screen and (min-width: 400px){    
     #home{
         background-color:#2A0944;
         overflow-x:hidden;
+        visibility:hidden;
 
     }
     #title-container{
@@ -23,6 +27,7 @@ body{
         height:45%;          
     }
     #title{        
+        font-family: 'trebuchet';
         display:inline-flex;  
         align-items:center;  
         align-content: center!important;    
@@ -37,6 +42,7 @@ body{
         visibility:hidden;
     }
     #description{
+        font-family: 'trebuchet';
         margin-left:38%;
         margin-right:20%;
         margin-top:-8%;
@@ -53,6 +59,7 @@ body{
         background-color:#2A0944;
         overflow-x: hidden !important;
         overflow-y: hidden;
+        visibility:hidden;
     }
     #title-container{
         display:flex;
@@ -62,6 +69,7 @@ body{
         height:50%;          
     }    
     #title{
+        font-family: 'trebuchet';
         display:inline-flex;  
         align-items:center;  
         align-content: center!important;    
@@ -76,8 +84,8 @@ body{
         border-radius: 0 15px 0 15px;
     }
     #description{
+        font-family: 'trebuchet';
         margin-left:45% !important;
-        /*margin-right:10% !important;*/
         margin-top:-2% !important;
         color:white;        
         font-weight:lighter;

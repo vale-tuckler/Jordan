@@ -1,4 +1,5 @@
 import React from 'react';
+import { gsap } from 'gsap';
 import Axios from 'axios';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
@@ -9,12 +10,12 @@ import '../styles/contact.css';
 export default class Contact extends React.Component{
     constructor(props){
         super(props);
-        this.state = {name:"", email:"", message:""}
-
+        this.state = {name:"", email:"", message:""}        
         this.onChangeName = this.onChangeName.bind(this);
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangeMsg = this.onChangeMsg.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.contactAnimations = this.contactAnimations.bind(this);
     }
 
     onChangeName(event){
@@ -30,7 +31,6 @@ export default class Contact extends React.Component{
     };
 
     onSubmit(e){
-        /*e.preventDefault();*/
 
         const Message = {
             name: this.state.name,
@@ -42,7 +42,30 @@ export default class Contact extends React.Component{
         .then(res => console.log(res))
         .catch(err => console.log(err));
     };
-    render(){
+
+
+    contactAnimations(){
+        let contact = gsap.timeline({delay:0.5});
+
+        contact            
+            .fromTo("#contact", 
+                    {opacity:0},
+                    {opacity:1, visibility:"visible", ease:"power2.out", duration:1})
+            .fromTo("#contactTitle",
+                    {opacity:0, visibility:"hidden"},
+                    {opacity:1, visibility:"visible", duration:1, ease:"circ.out"})
+            .fromTo("#form",
+                    {opacity:0, visibility:"hidden"},
+                    {opacity:1, visibility:"visible", duration:1.2, ease:"circ.out"})
+
+        
+        return contact;
+    };
+
+    componentDidMount(){
+        this.contactAnimations();
+    }
+    render(){        
         return(
             <div id="contact">
                 <Header/>
@@ -75,9 +98,9 @@ export default class Contact extends React.Component{
                                 />
                            </Form.Group>
                            {/* Form label*/}
-                        <div className="d-flex mb-2 justify-content-center">
+                        <div className="d-flex mb-2 justify-content-center submit-btn">
                             <Button 
-                                variant = "outline-warning" 
+                                variant = "outline-warning"
                                 as = "input"
                                 type = "submit"                                
                                 value = "Submit"

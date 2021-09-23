@@ -1,3 +1,8 @@
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
+
 body{
     margin:0;
     padding:0;
@@ -9,4 +14,5 @@ body{
 }
 .footer{
     visibility:hidden;
+    font-family:"trebuchet";
 }

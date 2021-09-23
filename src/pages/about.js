@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import Header from '../components/header';
 import Footer from '../components/footer';
-import Jlogo from '../imgs/jordan-logo.png';
+import Jlogo from '../imgs/jlogo.png';
 import "../styles/about.css";
 
 function About(){

@@ -13,10 +13,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 function Projects(){
     function projectsAnimation(){        
-        let projects = gsap.timeline({delay:1.3});
+        let projects = gsap.timeline();
 
 
         projects
+        .fromTo(".projects-container",
+                {visibility:"hidden", opacity:0},
+                {visibility:"visible", opacity:1, ease:"power3.inOut"})
         .fromTo(".title",
                 {opacity:0},
                 {opacity:1, 

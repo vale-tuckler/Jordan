@@ -1,8 +1,14 @@
+@font-face{
+    font-family:"trebuchet";
+    src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
+}
+
 @media screen and (min-width:400px){
     .projects-container{
         background-color:#3B185F;      
         height:110%;
         overflow-x: hidden;
+        visibility: hidden;
     }
     #third-image{
         width:96%;
@@ -28,6 +34,7 @@
         font-style: italic;
         font-weight:lighter;
         visibility:hidden;
+        font-family:"trebuchet";
     }
 }
 
@@ -36,6 +43,7 @@
         background-color:#3B185F;
         height:100%;
         overflow-x: hidden;
+        visibility: hidden;
     }
     #third-image{
         width:60%;
@@ -57,6 +65,7 @@
     }
     .title{
         color:white;
+        font-family: "trebuchet";
     }
 }
 @media screen and (min-width:800px){
