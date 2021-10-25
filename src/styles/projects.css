@@ -2,6 +2,46 @@
     font-family:"trebuchet";
     src: url("../fonts/trebuchet-converted/trebuc.woff") format("woff");
 }
+body{
+    overflow-x: hidden;
+}
+
+@media screen and (min-width:300px){
+    .projects-container{
+        background-color:#3B185F;      
+        height:150vh;
+        width: 100vw;
+        visibility: hidden;
+    }
+    #third-image{
+        width:94% !important;
+        height:30% !important;
+        visibility: hidden;    
+        margin-bottom:2%;
+        padding-bottom:0; 
+    }
+    .project-face{
+        margin:2%;
+        margin-bottom: 15%;
+        width:94% !important;
+        height:55% !important;   
+        visibility: hidden;     
+    }
+    .first-container{
+        margin-top:4%;
+    }
+    /*.third-container{
+        margin-bottom:5%;
+    }*/
+    .title{
+        color:white;
+        font-style:unset!important;
+        font-weight:unset;
+        visibility:hidden;
+        font-family:"trebuchet";
+        margin-left:3%;
+    }
+}
 
 @media screen and (min-width:400px){
     .projects-container{
@@ -11,15 +51,15 @@
         visibility: hidden;
     }
     #third-image{
-        width:96%;
-        height:100%;
+        width:50%;
+        height:50%;
         visibility: hidden;     
     }
     .project-face{
         margin:2%;
         margin-bottom: 15%;
-        width:96%;
-        height:50%;   
+        width:45%;
+        height:45%;   
         visibility: hidden;     
     }
     .first-container{
@@ -27,41 +67,42 @@
     }
     .third-container{
         height:100% !important;
-        margin-bottom:11%;
     }
     .title{
         color:white;
-        font-style: italic;
+        margin-left:3%;
+        font-style: unset;
         font-weight:lighter;
         visibility:hidden;
         font-family:"trebuchet";
+
     }
 }
 
 @media screen and (min-width:600px){
     .projects-container{          
         background-color:#3B185F;
-        height:100%;
+        height:20%;
         overflow-x: hidden;
         visibility: hidden;
     }
-    #third-image{
-        width:60%;
-        height:5%;
-    }
     .project-face{
         margin:2%;
-        margin-left:20%;
-        width:60%;
+        margin-left:22%!important;
+        width:55% !important;
         height:4% !important;        
         margin-bottom: 10%;
     }
     .first-container{
         margin-top:3%;
     }
-    .third-container{
-        height:10% !important;
+    /*.third-container{        
         margin-bottom:10%;
+    }*/
+    #third-image{
+        width:55% !important;
+        height:4% !important;
+        margin-left:22%;
     }
     .title{
         color:white;
@@ -73,10 +114,6 @@
         background-color:#3B185F;
         height:100%;
         overflow-x: hidden;
-    }
-    #third-image{
-        width:60%;
-        height:5%;
     }
     .project-face{
         margin:2%;
@@ -91,5 +128,10 @@
     .third-container{
         height:10% !important;
         margin-bottom:10%;
+    }
+    #third-image{
+        width:55% !important;
+        height:4% !important;
+        margin-left:22%;
     }
 }

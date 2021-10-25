@@ -10,22 +10,68 @@
 
 #projectsInfoContainer{
     background-color:#552586;
-    visibility: hidden;
 }
-@media screen and (min-width:400px){
+@media screen and (min-width:300px){
     .carousel{
-        width:92% !important;
-        height:25% !important;
+        width:88% !important;
+        height: 55% !important;
         margin-left:4%;
         margin-top:5%;
     }
+      
     .projectImg{
         width:100%;
-        height:100%;
+        height:50%;
         visibility:hidden;
     }
     #thirdDescription{
-        padding-bottom:25% !important;        
+        padding-bottom:10% !important;        
+    }    
+    .projectDescription{
+        margin-top:8%;
+        margin-bottom:18%;
+        margin-left: 8%;
+        margin-right:10%;
+        font-size:110%;
+        color:white !important;        
+        font-family:"futura-book";
+    }
+    .projectTitle{
+        display:flex;
+        justify-content: center;
+        margin-left:10%;
+        margin-bottom:10%;
+        font-weight: lighter;
+        font-style: oblique;
+        font-size:185%;
+        color:white;
+        font-family:"trebuchet";
+    }
+    .Text{
+        display:flex;
+        justify-content:center;
+        text-align: justify;        
+        margin:3%;
+        line-height: 160%;
+    }
+    .projectCaption{
+        color:white;
+    };
+}
+@media screen and (min-width:400px){
+    .carousel{
+        width:55% !important;
+        height:25% !important;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    .projectImg{
+        width:90%;
+        height:20%;
+        visibility:hidden;
+    }
+    #thirdDescription{
+        padding-bottom:5% !important;        
     }    
     .projectDescription{
         margin-top:8%;
@@ -109,12 +155,13 @@
         margin-left:26%;
         margin-top:3%;
     }
-    .carousel-control-prev{
-        margin-right:25% !important;
-    }
-    .carousel-control-next{
-        margin-left:20%;
-    }
+    .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+        margin-right: 0 !important;
+      }
+      
+      .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+        margin-left: 0 !important;
+      }
     .projectImg{
         width:85%;
         height:100%;

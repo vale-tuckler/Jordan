@@ -34,10 +34,7 @@ function ProjectsInfo(){
     function infoAnimations(){
         let infoTimeline = gsap.timeline({delay:1});
 
-        infoTimeline
-            .fromTo("#projectsInfoContainer",
-                    {visibility:"hidden",},
-                    {visibility:"visible", ease:"power4.in", duration:1.3})
+        infoTimeline           
             .fromTo(".projectImg",
                     {opacity:0},
                     {opacity:1, 
@@ -99,7 +96,7 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2 className="projectTitle">Minimalist Industrial Loft Project Description</h2>
+                    <h2 className="projectTitle">Minimalist Industrial Loft: Project Description</h2>
                     <div className="textContainer">
                         <p className="Text">
                             A modern architectural design that takes minimalism as its central 
@@ -153,7 +150,7 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription">
-                    <h2 className="projectTitle">Efficiency Apartment Project Description</h2>
+                    <h2 className="projectTitle">Efficiency Apartment: Project Description</h2>
                     <div className="textContainer">
                         <p className="Text">
                             A design made taking into consideration the usual energy demands of an 
@@ -220,7 +217,7 @@ function ProjectsInfo(){
                     </Carousel.Item>
                 </Carousel>
                 <div className="projectDescription" id="thirdDescription">
-                    <h2 className="projectTitle">Containers Apartment Project Description</h2>
+                    <h2 className="projectTitle">Containers Apartment: Project Description</h2>
                     <div className="textContainer">
                         <p className="Text">
                             This design was made around the principle of recycling. Recycling can bring 

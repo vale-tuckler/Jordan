@@ -12,7 +12,7 @@ body{
 }
 
 /*  M O B I L E    V E R S I O N  */
-@media screen and (min-width: 400px){    
+@media screen and (min-width: 300px){    
     #home{
         background-color:#2A0944;
         overflow-x:hidden;
@@ -52,6 +52,89 @@ body{
     }
     
 }
+
+@media screen and (min-width: 400px){    
+    #home{
+        background-color:#2A0944;
+        overflow-x:hidden;
+        visibility:hidden;
+
+    }
+    #title-container{
+        display:flex;
+        align-items: flex-end!important;
+        justify-content: center !important;
+        width:100%;      
+        height: 50%;          
+    }
+    #title{        
+        font-family: 'trebuchet';
+        display:inline-flex;  
+        align-items:center;  
+        align-content: center!important;    
+        justify-content: space-evenly !important;
+        height:30%;
+        width:100%;        
+        background-color:#2A0944;
+        color:white;
+        padding:2%;
+        font-weight:bold;          
+        font-size:270%;
+        visibility:hidden;
+    }
+    #description{
+        font-family: 'trebuchet';
+        margin-left:38%;
+        margin-right:20%;
+        margin-top:-8%;
+        color:white;        
+        font-weight:lighter;
+        visibility:hidden;
+    }
+    
+}
+
+@media screen and (min-width: 600px){    
+    #home{
+        background-color:#2A0944;
+        overflow-x:hidden;
+        visibility:hidden;
+
+    }
+    #title-container{
+        display:flex;
+        align-items: flex-end!important;
+        justify-content: center !important;
+        width:100%;      
+        height:45%;          
+    }
+    #title{        
+        font-family: 'trebuchet';
+        display:inline-flex;  
+        align-items:center;  
+        align-content: center!important;    
+        justify-content: space-evenly !important;
+        height:30%;
+        width:100%;        
+        background-color:#2A0944;
+        color:white;
+        padding:2%;
+        font-weight:bold;          
+        font-size:270%;
+        visibility:hidden;
+    }
+    #description{
+        font-family: 'trebuchet';
+        margin-left:38%;
+        margin-right:20%;
+        margin-top:-8%;
+        color:white;        
+        font-weight:lighter;
+        visibility:hidden;
+    }
+    
+}
+
 
 /*  D E S K T O P    V E R S I O N  */
 @media screen and (min-width: 800px){
